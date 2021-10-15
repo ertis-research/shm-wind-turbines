@@ -1,1 +1,1 @@
-# shm-wind-turbines
+# Structural Health Monitoring of Wind Turbines
