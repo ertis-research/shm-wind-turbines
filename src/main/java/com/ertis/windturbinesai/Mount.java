@@ -1,7 +1,7 @@
 package com.ertis.windturbinesai;
 
 public class Mount {
-    // Movimientos a la izquierda de menor a mayor (mira hacia la derecha)
+    // Left movements
     private final String LEFT_1 = "ESPt00249F0!";
     private final String LEFT_2 = "ESPt00493E0!";
     private final String LEFT_3 = "ESPt006DDD0!";
@@ -9,7 +9,7 @@ public class Mount {
     private final String LEFT_5 = "ESPt00B71B0!";
     private final String LEFT_6 = "ESPt00DBBA0!";
 
-    // Movimientos a la derecha de menor a mayor (mira hacia la izquierda)
+    // Right movements
     private final String DER_1 = "ESPt0FDB60F!";
     private final String DER_2 = "ESPt0FB6C1F!";
     private final String DER_3 = "ESPt0F9222F!";
@@ -23,7 +23,7 @@ public class Mount {
     private int port;
     private TelnetConnection telnet;
     private double centerX;
-    private int dir; // 1 = Izquierda, 2 = Derecha
+    private int dir; // 1 = Left, 2 = Right
     private int cont;
 
     public Mount() {
@@ -94,7 +94,7 @@ public class Mount {
                             System.out.println(response);
                             cont++;
                         }
-                    } else if(dir == 1) { // Mirar hacia la izquierda (movimiento a la derecha)
+                    } else if(dir == 1) { // Look to the left (right movement)
                         if(cont == 2) {
                             response = telnet.sendCommand(DER_2);
                             System.out.println(response);
@@ -112,7 +112,7 @@ public class Mount {
                             System.out.println(response);
                         }
                         cont++;
-                    } else if(dir == 2) { // Mirar hacia la derecha (movimiento a la izquierda)
+                    } else if(dir == 2) { // Look to the right (left movement)
                         if(cont == 2) {
                             response = telnet.sendCommand(LEFT_2);
                             System.out.println(response);
