@@ -11,5 +11,5 @@ A future line to follow in this project will consist of modifying the system so 
 ## Complete system
 
 <p align="center">
-<img src="images/complete-system.png" height="300">
+<img src="images/complete-system.png">
 </p>
