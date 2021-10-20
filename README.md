@@ -8,8 +8,8 @@ In order to do this, an Android application has been developed that allows you t
 
 A future line to follow in this project will consist of modifying the system so that it becomes a solution based on the Fog Computing paradigm, whereby the data collected by IoT (Internet of Things) devices are not sent directly to the cloud but are processed first in smaller decentralized data centers, thus avoiding problems related to latency and bandwidth, as well as overloading processing problems in the device itself.
 
-## General Architecture
+## Complete system
 
 <p align="center">
-<img src="images/general-architecture.png" height="300">
+<img src="images/complete-system.png" height="300">
 </p>
